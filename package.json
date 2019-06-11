@@ -2,9 +2,9 @@
 	"name": "yamldocjs",
 	"version": "1.0.0",
 	"description": "Converts YAMLDoc to HTML and Markdown",
-	"main": "index.js",
+	"main": "src/index.js",
 	"scripts": {
-		"test": ""
+		"build": "gulp"
 	},
 	"repository": {
 		"type": "git",
@@ -25,5 +25,11 @@
 	"homepage": "https://github.com/acontenti/yamldocjs#readme",
 	"dependencies": {
 		"js-yaml": "^3.13.1"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-rename": "^1.4.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify-es": "^1.0.4"
 	}
 }
