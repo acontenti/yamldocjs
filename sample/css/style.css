@@ -32,7 +32,6 @@ textarea, .CodeMirror {
 	height: auto;
 	width: 100%;
 	font-size: 10pt;
-	resize: vertical;
 	font-family: 'Roboto Mono', monospace;
 }
 
