@@ -1,0 +1,29 @@
+{
+	"name": "yamldocjs",
+	"version": "1.0.0",
+	"description": "Converts YAMLDoc to HTML and Markdown",
+	"main": "index.js",
+	"scripts": {
+		"test": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/acontenti/yamldocjs.git"
+	},
+	"keywords": [
+		"yaml",
+		"html",
+		"md",
+		"markdown",
+		"doc"
+	],
+	"author": "Alessandro Contenti",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/acontenti/yamldocjs/issues"
+	},
+	"homepage": "https://github.com/acontenti/yamldocjs#readme",
+	"dependencies": {
+		"js-yaml": "^3.13.1"
+	}
+}
