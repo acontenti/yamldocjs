@@ -26,8 +26,8 @@ $(function () {
 		md_editor.setValue('');
 		$html_div.html('<br>');
 		let yaml = yamldoc_editor.getValue();
-		let html = yamldoc2html(yaml);
-		let md = yamldoc2md(yaml);
+		let html = yamldocjs.yamldoc2html(yaml);
+		let md = yamldocjs.yamldoc2md(yaml);
 		if (html === undefined || md === undefined) return;
 		html_editor.setValue(html);
 		md_editor.setValue(md);
