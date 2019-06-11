@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{codemirror, css, gfm, htmlmixed, javascript, jquery, js-yaml, markdown, medium-editor, overlay, xml, yaml}" />
+  </component>
+</project>
