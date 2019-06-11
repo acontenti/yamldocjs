@@ -20,7 +20,7 @@ main {
 	margin: auto;
 }
 
-h1 {
+#title {
 	margin: 10px;
 	font-family: monospace;
 	font-size: 40pt;
@@ -93,8 +93,13 @@ footer {
 	white-space: pre;
 }
 
-h1 sub {
+#title sub {
 	font-size: 35%;
 	vertical-align: baseline;
 	padding: 10px;
+}
+
+main {
+	flex-grow: 1;
+	margin: 0 10px;
 }

@@ -36,6 +36,14 @@ $(function () {
 		$copy_md.attr('disabled', false);
 		$copy_result.attr('disabled', false);
 	});
+	$('#clear-button').click(function () {
+		html_editor.setValue('');
+		md_editor.setValue('');
+		$html_div.html('<br>');
+		$copy_html.attr('disabled', true);
+		$copy_md.attr('disabled', true);
+		$copy_result.attr('disabled', true);
+	});
 	$copy_html.click(function () {
 		copyTextToClipboard(html_editor.getValue());
 	});
