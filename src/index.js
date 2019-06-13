@@ -1,4 +1,5 @@
 (function () {
+	const MAX_HEADING = 4;
 	let yaml;
 	if (typeof require == "function" && require) {
 		yaml = require('js-yaml');
@@ -67,7 +68,7 @@
 		else if (typeof node === 'object') {
 			return (slideContent ? spaces + "<ul>\n" : "")
 				+ objectMap(node, function (key, it) {
-					const headingSize = headingLevel <= 6 ? headingLevel : 6;
+					const headingSize = headingLevel <= MAX_HEADING ? headingLevel : MAX_HEADING;
 					return (slideContent ? spaces + "\t" : spaces)
 						+ "<h" + headingSize + ">" + styleHtml(key) + "</h" + headingSize + ">\n"
 						+ parseNodeHtml(it, indent + (slideContent ? 1 : 0), headingLevel + 1, true);
@@ -87,7 +88,7 @@
 		}).join("");
 		else if (typeof node === 'object') {
 			return objectMap(node, function (key, it) {
-				const headingSize = headingLevel <= 6 ? headingLevel : 6;
+				const headingSize = headingLevel <= MAX_HEADING ? headingLevel : MAX_HEADING;
 				return "#".repeat(headingSize) + " " + styleMd(key) + "\n"
 					+ parseNodeMd(it, indent, headingLevel + 1);
 			}).join("");
